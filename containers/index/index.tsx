@@ -5,7 +5,7 @@ import { GET } from 'utils/fetch';
 import Test from 'containers/test/test';
 
 function Example () {
-  const [show, setShow] =  React.useState(false);
+  const [show, setShow] = React.useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
