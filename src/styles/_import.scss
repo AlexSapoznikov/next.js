@@ -1,16 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
 // Global variables
-@import "./global-variables";
+@import "global-variables";
 
 // Global style
-@import "./global";
+@import "global";
 
 // Variables
-@import "./bootstrap-custom-variables";
+@import "bootstrap-custom-variables";
 
 // Bootstrap
-@import "~bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Font awesome
 //@import "~font-awesome/css/font-awesome.css";

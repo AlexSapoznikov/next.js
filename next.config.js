@@ -16,7 +16,7 @@ module.exports = withSass({
             loader: 'sass-resources-loader',
             options: {
               resources: [
-                './styles/_import.scss',
+                path.resolve(__dirname, './src/styles/_import.scss'),
               ],
             },
           },
@@ -31,7 +31,7 @@ module.exports = withSass({
       'utils',
       'styles',
     ].forEach(dir => {
-      config.resolve.alias[dir] = path.join(__dirname, dir);
+      config.resolve.alias[dir] = path.join(__dirname, 'src', dir);
     });
 
     // Import extensions that do need to be specified
