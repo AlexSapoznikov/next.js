@@ -1,0 +1,97 @@
+// CUSTOM BOOTSTRAP VARIABLES - overrides bootstrap _variables.scss
+// https://github.com/twbs/bootstrap/blob/v4.1.3/scss/_variables.scss
+
+@import "./global-variables";
+
+// Color system
+
+$primary:                                         $color-secondary;
+$secondary:                                       $color-primary;
+$success:                                         $color-success;
+$info:                                            $color-info;
+$warning:                                         $color-warning;
+$danger:                                          $color-danger;
+
+// Options - Quickly modify global styling by enabling or disabling optional features.
+
+$enable-transitions:                              true;
+$enable-rounded:                                  true;
+
+// Spacing - Control the default spacing of most Bootstrap elements by modifying these variables
+
+$spacer:                                          1rem !default;
+$spacers: (
+  q:                                              $spacer * 0.25,
+  h:                                              $spacer * 0.5,
+  0:                                              0,
+  1:                                              $spacer,
+  2:                                              $spacer * 2,
+  3:                                              $spacer * 3
+);
+
+// Fonts - Font, line-height, and color for body text, headings, and more.
+
+$headings-font-weight:                            700;
+$font-size-base:                                  0.9rem;
+$font-size-lg:                                    1rem;
+$h1-font-size:                                    2.25rem;
+$h2-font-size:                                    1.75rem;
+$h3-font-size:                                    1.25rem;
+$h4-font-size:                                    1rem;
+$h5-font-size:                                    0.875rem;
+$h6-font-size:                                    0.75rem;
+$font-family-sans-serif:                          $font-secondary;
+$font-family-base:                                $font-family-sans-serif;
+//$text-muted:          	       	                  $color-gray;
+
+// Cards
+
+//$card-border-color:   		                        $color-gray--lighter;
+//$card-cap-bg:          		                        $color-gray--lightest;
+
+// Dropdowns - Dropdown menu container and contents.
+
+//$dropdown-padding-y:                              0;
+//$dropdown-border-color:                           $color-gray--lighter;
+//$dropdown-divider-bg:                             $color-gray--lightest;
+//$dropdown-header-color:                           $color-gray;
+
+// Forms
+
+//$input-border-color:                            ?
+$input-focus-color:                               $color-secondary;
+$input-focus-border-color:                        $color-secondary;
+$custom-control-indicator-active-bg:              $color-secondary;
+$custom-checkbox-indicator-border-radius:         0;
+$input-group-addon-color:                         $color-tertiary !default;
+$input-group-addon-bg:                            none !default;
+$input-group-addon-border-color:                  none !default;
+
+// Buttons
+
+$btn-padding-x:                                   1rem !default;
+$btn-padding-y:                                   0.5rem !default;
+$input-btn-line-height:                           1.25 !default;
+
+$btn-padding-x-sm:                                .5rem !default;
+$btn-padding-y-sm:                                .25rem !default;
+$input-btn-line-height-sm:                        1.25 !default;
+
+$btn-padding-x-lg:                                1.75rem !default;
+$btn-padding-y-lg:                                0.75rem !default;
+$input-btn-line-height-lg:                        1.25 !default;
+
+// Popovers
+
+$popover-max-width:                               350px;
+$popover-border-color:                            $color-secondary !default;
+
+// Tooltips
+
+$tooltip-bg:                                      #75C4DA !default;
+
+// Alerts
+
+//$alert-padding-y:                               ?
+$alert-padding-x:                                 1.25rem !default;
+$alert-border-radius:                             20px !default;

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+// Colors
+
+$color-primary:                     #251F1C;
+$color-secondary:                   #251F1C;
+$color-tertiary:                    #251F1C;
+$color-success:                     #BDEA74;
+$color-danger:                      #FF5454;
+$color-warning:                     #FEBA09;
+$color-info:                        #67C2EF;
+$color-gray:                        #A8A5A4;
+
+// Header
+
+// Footer
+
+// Fonts
+
+$font-primary:                      'Open Sans', sans-serif, serif;
+$font-secondary:                    'Ubuntu', sans-serif, serif;
+
+// Media query sizes (breakpoints that bootstrap uses)
+
+$xs-min:                            0px;
+$xs-max:                            575px;
+
+$sm-min:                            576px;
+$sm-max:                            767px;
+
+$md-min:                            768px;
+$md-max:                            991px;
+
+$lg-min:                            992px;
+$lg-max:                            1199px;
+
+$xl-min:                            1200px;

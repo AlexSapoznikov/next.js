@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+// Global variables
+@import "./global-variables";
+
+// Global style
+@import "./global";
+
+// Variables
+@import "./bootstrap-custom-variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Font awesome
+//@import "~font-awesome/css/font-awesome.css";
+//@import "~font-awesome-animation/dist/font-awesome-animation.min.css";
