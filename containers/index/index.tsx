@@ -1,10 +1,10 @@
 import React from 'react';
-import Head from 'next/head';
 import { Button, Modal } from 'react-bootstrap';
-import Nav from '../../components/nav';
 import './index.scss';
+import { GET } from 'utils/fetch';
+import Test from 'containers/test/test';
 
-function Example() {
+function Example (props) {
   const [show, setShow] = React.useState(false);
 
   const handleClose = () => setShow(false);
@@ -12,6 +12,8 @@ function Example() {
 
   return (
     <>
+      <Test />
+
       <Button variant="primary" onClick={handleShow}>
         Launch demo modal
       </Button>
@@ -33,5 +35,7 @@ function Example() {
     </>
   );
 }
+
+Example.getInitialProps = () => GET('https://api.github.com/repos/zeit/next.js');
 
 export default Example;

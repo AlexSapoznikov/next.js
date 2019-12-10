@@ -12,6 +12,12 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "paths": ["."],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
     }
   },
   "parserOptions": {
@@ -30,7 +36,11 @@
     "arrow-parens": "off",
     "operator-linebreak": ["error", "after"],
     "no-param-reassign": "off",
-    "object-curly-newline": "off"
+    "object-curly-newline": "off",
+    "prefer-object-spread": "off",
+    "space-before-function-paren": ["error", "always"],
+    "no-use-before-define": ["error", { "functions": false, "classes": false }],
+    "react/jsx-filename-extension": [2, { "extensions": [".jsx", ".tsx"] }]
   },
   "globals": {
 
