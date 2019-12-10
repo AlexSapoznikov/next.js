@@ -41,6 +41,7 @@
     "space-before-function-paren": ["error", "always"],
     "no-use-before-define": ["error", { "functions": false, "classes": false }],
     "react/jsx-filename-extension": [2, { "extensions": [".jsx", ".tsx"] }],
+    "react/destructuring-assignment": "off",
     "import/extensions": [
       "error",
       "ignorePackages",

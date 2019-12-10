@@ -1,10 +1,10 @@
 import React from 'react';
 import { Button, Modal } from 'react-bootstrap';
-import './index.scss';
+import './example.scss';
 import { GET } from 'utils/fetch';
 import Test from 'containers/test/test';
 
-function Example () {
+function Example (props: any) {
   const [show, setShow] = React.useState(false);
 
   const handleClose = () => setShow(false);
@@ -22,7 +22,10 @@ function Example () {
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you&apos;re reading this text in a modal!</Modal.Body>
+        <Modal.Body>
+          Fetched data:
+          {JSON.stringify(props.data)}
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close

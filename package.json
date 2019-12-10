@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "./node_modules/eslint/bin/eslint.js \"./**/*.js\" \"./**/*.jsx\"",
-    "lint-fix": "./node_modules/eslint/bin/eslint.js \"./**/*.js\" \"./**/*.jsx\" --fix"
+    "lint": "./node_modules/eslint/bin/eslint.js \"./**/*.js\" \"./**/*.jsx\" \"./**/*.ts\" \"./**/*.tsx\"",
+    "lint-fix": "npm run lint -- --fix"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
