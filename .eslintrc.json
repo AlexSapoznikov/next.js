@@ -28,7 +28,8 @@
     "sourceType": "module"
   },
   "plugins": [
-    "react"
+    "react",
+    "react-hooks"
   ],
   "rules": {
     "react/react-in-jsx-scope": "off",
@@ -51,7 +52,9 @@
         "ts": "never",
         "tsx": "never"
       }
-    ]
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
   "globals": {
 
