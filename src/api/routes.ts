@@ -1,3 +1,7 @@
+/**
+ * All API routes are in this file.
+ */
+
 import getConfig from 'next/config';
 
 const { publicRuntimeConfig } = getConfig();
