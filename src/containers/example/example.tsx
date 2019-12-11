@@ -3,8 +3,7 @@ import { Button, Modal } from 'react-bootstrap';
 import './example.scss';
 import { GET } from 'utils/fetch';
 import Test from 'containers/test/test';
-import getConfig from 'next/config';
-const { publicRuntimeConfig } = getConfig();
+import config from 'utils/config';
 
 function Example (props: any) {
   const [show, setShow] = React.useState(false);
@@ -17,7 +16,7 @@ function Example (props: any) {
       <Test />
 
       <Button variant="primary" onClick={handleShow}>
-        Launch demo modal {publicRuntimeConfig.env}
+        Launch demo modal {config.env}
       </Button>
 
       <Modal show={show} onHide={handleClose}>

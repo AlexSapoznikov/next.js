@@ -4,7 +4,7 @@
 
 const withSass = require('@zeit/next-sass');
 const path = require('path');
-const { PHASE_DEVELOPMENT_SERVER } = require('next/constants')
+const { PHASE_DEVELOPMENT_SERVER } = require('next/constants');
 const configDev = require('./config/config.dev');
 const configProd = require('./config/config.prod');
 

@@ -1,8 +1,5 @@
 /**
  * Production environment configuration
- * To use in code:
- *    import getConfig from 'next/config'
- *    const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
  * @type {{serverRuntimeConfig: {}, publicRuntimeConfig: {}}}
  */
 module.exports = {

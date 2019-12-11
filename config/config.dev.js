@@ -1,8 +1,5 @@
 /**
  * Development environment configuration
- * To use in code:
- *    import getConfig from 'next/config'
- *    const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
  * @type {{serverRuntimeConfig: {}, publicRuntimeConfig: {}}}
  */
 module.exports = {
@@ -14,5 +11,8 @@ module.exports = {
   // Config that is available on both server and client
   publicRuntimeConfig: {
     env: 'dev',
+    api: {
+      url: 'http://localhost:5000',
+    },
   },
 };

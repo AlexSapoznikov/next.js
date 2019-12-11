@@ -1,3 +1,7 @@
+/**
+ * Request methods.
+ */
+
 import fetch from 'isomorphic-unfetch';
 
 export async function GET (url: string, opts = {}) {
