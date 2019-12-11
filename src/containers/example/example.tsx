@@ -19,6 +19,8 @@ function Example (props: any) {
         Launch demo modal {config.env}
       </Button>
 
+      <img alt="" src="/favicon.ico" />
+
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
