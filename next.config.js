@@ -4,8 +4,11 @@
 
 const withSass = require('@zeit/next-sass');
 const path = require('path');
+const { PHASE_DEVELOPMENT_SERVER } = require('next/constants')
+const configDev = require('./config/config.dev');
+const configProd = require('./config/config.prod');
 
-module.exports = withSass({
+module.exports = (phase) => withSass({
   webpack: (config /* , options */) => {
     // Import scss files
     config.module.rules.push(
@@ -36,7 +39,16 @@ module.exports = withSass({
 
     // Import extensions that do need to be specified
     config.resolve.extensions.push('.ts', '.tsx', '.js', '.jsx');
-
     return config;
   },
+
+  ...(() => {
+    if (phase === PHASE_DEVELOPMENT_SERVER) {
+      // development only config options here
+      return configDev;
+    }
+
+    // config options for all phases except development here
+    return configProd;
+  })(),
 });
