@@ -4,12 +4,16 @@ import './example.scss';
 import { GET } from 'utils/fetch';
 import Test from 'containers/test/test';
 import config from 'config';
+import { getUser } from '../../store/actions/user.actions';
 
 function Example (props: any) {
   const [show, setShow] = React.useState(false);
 
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = () => {
+    setShow(true);
+    getUser({ id: 1 });
+  };
 
   return (
     <>

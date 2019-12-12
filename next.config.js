@@ -61,6 +61,7 @@ module.exports = (phase) => withSass({
       'styles',
       'config',
       'translations',
+      'store',
     ].forEach(dir => {
       config.resolve.alias[dir] = path.join(__dirname, 'src', dir);
     });

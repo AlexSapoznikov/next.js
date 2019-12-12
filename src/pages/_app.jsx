@@ -5,6 +5,8 @@
 
 import React from 'react';
 import App from 'next/app';
+import { Provider } from 'react-redux';
+import store from '../store';
 
 export default class MyApp extends App {
   render () {
@@ -21,6 +23,10 @@ export default class MyApp extends App {
       return null;
     }
 
-    return <Component {...pageProps} />;
+    return (
+      <Provider store={store}>
+        <Component {...pageProps} />
+      </Provider>
+    );
   }
 }
