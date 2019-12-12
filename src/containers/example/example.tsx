@@ -3,7 +3,7 @@ import { Button, Modal } from 'react-bootstrap';
 import './example.scss';
 import { GET } from 'utils/fetch';
 import Test from 'containers/test/test';
-import config from 'utils/config';
+import config from 'config';
 
 function Example (props: any) {
   const [show, setShow] = React.useState(false);
@@ -13,10 +13,10 @@ function Example (props: any) {
 
   return (
     <>
-      <Test />
+      <Test greeting="hi" />
 
       <Button variant="primary" onClick={handleShow}>
-        Launch demo modal {config.env}
+        Launch demo modal {config.get('a')} {config.get('env')}
       </Button>
 
       <img alt="" src="/favicon.ico" />

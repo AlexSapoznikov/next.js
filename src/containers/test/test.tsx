@@ -1,11 +1,12 @@
 import React from 'react';
-
 import './test.scss';
 
-export default () => (
+type Props = {greeting: string};
+
+export default (props: Props) => (
   <div>
     <div className="test">
-      test
+      test {props.greeting}
     </div>
   </div>
 );

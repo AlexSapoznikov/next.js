@@ -14,5 +14,9 @@ module.exports = {
     api: {
       url: 'http://localhost:5000',
     },
+    language: {
+      default: 'ee',
+      list: ['ee'],
+    },
   },
 };
